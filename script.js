@@ -2,6 +2,8 @@ const div = document.getElementById('users')
 const urlUsers = 'https://jsonplaceholder.typicode.com/users'
 const urlComments = 'https://jsonplaceholder.typicode.com/comments'
 
+//utiliza o método .then() de promises
+
 // fetch(url)
 //     .then((resp) => resp.json())
 //     .then(function (data) {
@@ -35,6 +37,8 @@ async function getComments(postId, id) {
     return div.innerHTML = `<pre> ${JSON.stringify(comment, null, "\t")} </pre>`;
 
 }
+
+//exibe como uma lista de itens com labels
 
 // .map((comments) => {
 //     let span = document.createElement('span');
